@@ -1,2 +1,3 @@
-# dio-desafio-gh
-Desafio de projeto sobre Git/Github - DIO
+# Bootcamp Carrefour Web Developer
+
+Repositório de atividades e projetos relacionados ao bootcamp.
