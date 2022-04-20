@@ -1,0 +1,71 @@
+:root { /*definindo variáveis paras cores principais da página*/
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos principais*/
+body {
+    background-color: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: 	#AAA;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #ffffff;
+}
+
+/*elementos do filme principal da página*/
+.filme-principal {
+    font-size: 17px;
+    background: linear-gradient(rgba(0,0,0,.40),rgb(0,0,0,.40) 100%), url("/img/capa_stranger.png");
+
+    height: 350px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.botoes {
+    flex-direction: row;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.titulo {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Arial Black', Times;
+}
