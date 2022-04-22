@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 :root { /*definindo variáveis paras cores principais da página*/
     --vermelho: #E50914;
     --preto: #141414;
@@ -12,7 +14,7 @@
 /*elementos principais*/
 body {
     background-color: var(--preto);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
 
@@ -25,7 +27,7 @@ header .container {
 
 .logo {
     color: var(--vermelho);
-    font-family: 'Arial Black', Times;
+    font-family: 'Bebas Neue', cursive;  
     font-size: 40px;
     margin-left: 10px;
 }
@@ -33,7 +35,7 @@ header .container {
 header nav a {
     text-decoration: none;
     color: 	#AAA;
-    text-transform: uppercase;
+    text-transform: none;
     margin-right: 10px;
 }
 
@@ -44,10 +46,11 @@ header nav a:hover {
 /*elementos do filme principal da página*/
 .filme-principal {
     font-size: 17px;
-    background: linear-gradient(rgba(0,0,0,.40),rgb(0,0,0,.40) 100%), url("/img/capa_stranger.png");
+    background: linear-gradient(rgba(0,0,0,.40),rgb(0,0,0,.40) 100%), url("/img/capa_desenho.png");
 
-    height: 350px;
+    height: 500px;
     background-size: cover;
+    background-position: center;
 
     display: flex;
     flex-direction: column;
@@ -57,15 +60,45 @@ header nav a:hover {
 
 .botoes {
     flex-direction: row;
+    margin-left: 30px;
 }
 
 .filme-principal .descricao {
     margin-bottom: 10px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 30px;
 }
 
 .titulo {
     font-size: 35px;
     font-weight: bold;
     font-family: 'Arial Black', Times;
+    margin-left: 30px;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 12px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+.botao:hover {
+    background: white;
+    color: black;
+}
+
+.filme-principal .container {
+    width: 50%;
+    justify-content: space-between;
+}
+
+.fa-solid {
+    margin-right: 7px;
 }
