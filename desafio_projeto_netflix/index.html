@@ -4,6 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="style/main.css">
+
+        <!--Link arquivos owl css-->
+        <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+        <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
         <title>Clone Netflix</title>
     </head>
     <body>
@@ -12,13 +17,16 @@
                 <h2 class="logo">Nostalflix</h2>
                 <nav>
                     <a href="#">Início</a>
-                    <a href="#">Filmes</a>
-                    <a href="#">Séries</a>
-                    <a href="#">Documentários</a>
+                    <a href="#">Categorias</a>
+                    <a href="#">Notícias</a>
+                    <a href="#">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
                 </nav>
             </div>
         </header>
 
+        <!--Secão de filme principal da página-->
         <main>
             <div class="filme-principal">
                 <div class="container">
@@ -38,6 +46,204 @@
             </div>
         </main>
 
+        <!--Seção carrosel de filmes em destaque-->
+        <div class="carrosel_filmes">
+            <h2 class="titulo_carrosel">DESTAQUES</h2>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <a href="#abrirmodal_1">
+                        <img class = "box_filme" src="img/capa1.jpg">
+                    </a> 
+                </div>
+                <div class="item">
+                    <a href="#abrirmodal_2">
+                        <img class = "box_filme" src="img/capa2.jpg">
+                    </a> 
+                </div>
+                <div class="item">
+                    <a href="#abrirmodal_3">
+                        <img class = "box_filme" src="img/capa3.jpg">
+                    </a> 
+                </div>
+                <div class="item">
+                    <a href="#abrirmodal_4">
+                        <img class = "box_filme" src="img/capa4.jpg">
+                    </a> 
+                </div>
+                <div class="item">
+                    <img class = "box_filme" src="img/capa5.jpg">
+                </div>
+                <div class="item">
+                    <img class = "box_filme" src="img/capa6.jpg">
+                </div>
+                <div class="item">
+                    <img class = "box_filme" src="img/capa7.jpg">
+                </div>
+                <div class="item">
+                    <img class = "box_filme" src="img/capa8.jpg">
+                </div>
+                <div class="item">
+                    <img class = "box_filme" src="img/capa9.jpg">
+                </div>
+                <div class="item">
+                    <img class = "box_filme" src="img/capa10.jpg">
+                </div>
+                <div class="item">
+                    <img class = "box_filme" src="img/capa11.jpg">
+                </div>
+                <div class="item">
+                    <img class = "box_filme" src="img/capa12.jpg">
+                </div>
+                <div class="item">
+                    <img class = "box_filme" src="img/capa13.jpg">
+                </div>
+            </div>
+        </div>
+
+        <!--Seção de direcionamento e configuração de janela modal com informações dos desenhos-->
+        <div id="abrirmodal_1" class="modal">
+            <div class="modal_box">
+                <img class="box_filme_modal" src="img/capa1.jpg">
+                <a href="#fechar" title="Fechar" class="fechar">x</a>
+                <div class="container">
+                    <h2>HI HI PUFFY AMI YUMI</h2>
+                    <div class="infos">
+                        <h5>2004</h5>
+                        <h5>Animação/Comédia</h5>
+                        <h5>Criador: Sam Register</h5> 
+                    </div>
+                    <div class="sinopse">
+                        <p>Sinopse</p>
+                        <p>Ami e Yumi são cantoras de rock que vivem aventuras incríveis em muitos lugares do planeta!</p>
+                    </div>
+                    <div class="botoes_modal">
+                        <button role="button" class="botao_modal">
+                            <i class="fa-solid fa-heart"></i>
+                        </button>
+                        <a href="https://www.youtube.com/watch?v=qnq0glgalF0" target="_blank">
+                            <button role="button" class="botao_modal">
+                                <i class="fa-solid fa-film"></i>
+                                ABERTURA
+                            </button>
+                        </a>
+                        <button role="button" class="botao_modal">
+                            <i class="fa-solid fa-play"></i>
+                            ASSISTIR AGORA
+                        </button>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <div id="abrirmodal_2" class="modal">
+            <div class="modal_box">
+                <img class="box_filme_modal" src="img/capa2.jpg">
+                <a href="#fechar" title="Fechar" class="fechar">x</a>
+                <div class="container">
+                    <h2>KIM POSSIBLE</h2>
+                    <div class="infos">
+                        <h5>2002</h5>
+                        <h5>Animação/Comédia/Ação e aventura</h5>
+                        <h5>Criador: Mark McCorkle e Bob Schooley</h5> 
+                    </div>
+                    <div class="sinopse">
+                        <p>Sinopse</p>
+                        <p>Kimberly Ann Possible, é uma adolescente que mora na cidade de Middletown e luta diariamente contra o crime, além de ter suas obrigações escolares e familiares.</p>
+                    </div>
+                    <div class="botoes_modal">
+                        <button role="button" class="botao_modal">
+                            <i class="fa-solid fa-heart"></i>
+                        </button>
+                        <a href="https://www.youtube.com/watch?v=88dk2hyIwCM" target="_blank">
+                            <button role="button" class="botao_modal">
+                                <i class="fa-solid fa-film"></i>
+                                ABERTURA
+                            </button>
+                        </a>
+                        <button role="button" class="botao_modal">
+                            <i class="fa-solid fa-play"></i>
+                            ASSISTIR AGORA
+                        </button>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <div id="abrirmodal_3" class="modal">
+            <div class="modal_box">
+                <img class="box_filme_modal" src="img/capa3.jpg">
+                <a href="#fechar" title="Fechar" class="fechar">x</a>
+                <div class="container">
+                    <h2>PHINEAS E FERB</h2>
+                    <div class="infos">
+                        <h5>2007</h5>
+                        <h5>Animação/Comédia/Sci-Fi</h5>
+                        <h5>Criador: Dan Povenmire, Jeff's Marsh e Joe Orrantia</h5> 
+                    </div>
+                    <div class="sinopse">
+                        <p>Sinopse</p>
+                        <p>Todos os dias, dois meio-irmãos nas férias de verão embarcam em um grande novo projeto, o que irrita sua irmã controladora, Candace, que sempre tenta entrega-los para sua mãe. Enquanto isso, seu animal de estimação Perry o ornitorrinco luta contra o malvado Dr. Doofenshmirtz.</p>
+                    </div>
+                    <div class="botoes_modal">
+                        <button role="button" class="botao_modal">
+                            <i class="fa-solid fa-heart"></i>
+                        </button>
+                        <a href="https://www.youtube.com/watch?v=rDcXnrHyB_c" target="_blank">
+                            <button role="button" class="botao_modal">
+                                <i class="fa-solid fa-film"></i>
+                                ABERTURA
+                            </button>
+                        </a>
+                        <button role="button" class="botao_modal">
+                            <i class="fa-solid fa-play"></i>
+                            ASSISTIR AGORA
+                        </button>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <div id="abrirmodal_4" class="modal">
+            <div class="modal_box">
+                <img class="box_filme_modal" src="img/capa4.jpg">
+                <a href="#fechar" title="Fechar" class="fechar">x</a>
+                <div class="container">
+                    <h2>O LABORATÓRIO DO DEXTER</h2>
+                    <div class="infos">
+                        <h5>1996</h5>
+                        <h5>Animação/Comédia/Sci-Fi</h5>
+                        <h5>Criador: Genndy Tartakovsky</h5> 
+                    </div>
+                    <div class="sinopse">
+                        <p>Sinopse</p>
+                        <p>
+                            Para Dexter, todo dia é um grande dia para a ciência! Dexter é um jovem gênio que planeja aventuras longe dos olhos atentos de seus pais. Ele somente é interrompido por sua irmã mais velha, Dee Dee.
+                        </p>
+                    </div>
+                    <div class="botoes_modal">
+                        <button role="button" class="botao_modal">
+                            <i class="fa-solid fa-heart"></i>
+                        </button>
+                        <a href="https://www.youtube.com/watch?v=sZf3EoEDkWw" target="_blank">
+                            <button role="button" class="botao_modal">
+                                <i class="fa-solid fa-film"></i>
+                                ABERTURA
+                            </button>
+                        </a>
+                        <button role="button" class="botao_modal">
+                            <i class="fa-solid fa-play"></i>
+                            ASSISTIR AGORA
+                        </button>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+
         <script src="https://kit.fontawesome.com/a1919c5d67.js" crossorigin="anonymous"></script>
+        <script src="js/owl/jquery.min.js"></script>
+        <script src="js/owl/owl.carousel.min.js"></script>
+        <script src="js/owl/main.js"></script>
+
     </body>
 </html>

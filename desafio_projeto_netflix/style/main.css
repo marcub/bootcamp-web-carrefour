@@ -16,6 +16,7 @@ body {
     background-color: var(--preto);
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    font-family: 'Bebas Neue', cursive;
 }
 
 header .container {
@@ -36,7 +37,7 @@ header nav a {
     text-decoration: none;
     color: 	#AAA;
     text-transform: none;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 header nav a:hover {
@@ -101,4 +102,120 @@ header nav a:hover {
 
 .fa-solid {
     margin-right: 7px;
+}
+
+.box_filme {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.titulo_carrosel {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:start;
+    margin: 5px;
+}
+
+/*Definindo configurações de janela modal*/
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;  /*Linhas 114-118: posicionamento da janela modal*/
+    bottom: 0;
+    left: 0;
+    font-family: 'Bebas Neue', cursive;
+    background: rgba(0,0,0,.8); /*Linha 120: escurecimento do fundo*/
+    z-index: 99999; /*Linha 121: Assegura que a janela vai aparecer por cima das outras, como um sistema de camadas*/
+    opacity: 0; /*Linha 122: configura opacidade da janela*/
+    -webkit-transition: opacity 400ms ease-in; /*Linhas 123-125: configura um timing apropriado de transição da janela*/
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modal:target {
+    opacity: 1;
+    pointer-events: auto; /*Assegura que a janela modal será parte do site, assim como o restante*/
+}
+
+/*Estilização da janela modal*/
+.modal_box {
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    padding: 15px 20px;
+    background: var(--preto);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start ;
+    align-items: flex-start;
+}
+
+/*Estlização do botão fechar*/
+.fechar {
+    position: absolute;
+    width: 30px;
+    right: -15px;
+    top: -20px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 5px;
+    background: #ff4545;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #8d0000;
+}
+
+.modal .modal_box .container {
+    height: 100%;
+    width: 65%;
+    margin-left: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box_filme_modal {
+    height: 100%;
+    position: center;
+}
+
+.infos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; 
+
+    margin-bottom: 6%;
+}
+
+.botoes_modal {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.botao_modal {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 12px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+.botao_modal:hover {
+    background: white;
+    color: black;
+}
+
+.sinopse {
+    margin-bottom: 6%;
 }
